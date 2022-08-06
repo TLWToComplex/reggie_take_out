@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: 86150
+Build-Jdk: 1.8.0_321
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor-Id: com.itheima
+Main-Class: ${start-class}
+
