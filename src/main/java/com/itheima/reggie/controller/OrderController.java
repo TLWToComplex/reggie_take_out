@@ -5,10 +5,7 @@ import com.itheima.reggie.entity.Orders;
 import com.itheima.reggie.service.OrderService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * 订单
@@ -31,5 +28,10 @@ public class OrderController {
         log.info("订单数据：{}",orders);
         orderService.submit(orders);
         return R.success("下单成功");
+    }
+
+    @GetMapping("/userPage")
+    public R<String> userInfo(){
+        return R.success("success");
     }
 }
